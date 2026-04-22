@@ -1,0 +1,32 @@
+# Day-2 perception layer
+web3==7.*
+websockets==13.*
+httpx[http2]==0.28.*
+feedparser==6.*
+
+# Day-3 cognition layer
+anthropic==0.40.*       # direct Anthropic fallback; Bankr Gateway is OpenAI-compatible
+openai==1.*             # text-embedding-3-small + Grok (xAI is OpenAI-compatible)
+asyncpg==0.30.*         # postgres async driver
+pgvector==0.3.*         # pgvector dialect helpers
+tiktoken==0.8.*         # token accounting
+
+# Day-4 action + API layer
+tweepy==4.*             # X poster
+fastapi==0.115.*        # x402 endpoints (/scan, /intel, /simulate)
+uvicorn[standard]==0.32.*
+prometheus-client==0.21.*
+cryptography==44.*      # x402 signed payment verification
+
+# Test
+httpx-sse==0.4.*        # used by FastAPI TestClient async path
+
+# Config
+pydantic==2.*
+pyyaml==6.*
+python-dotenv==1.*
+
+# Test
+pytest==8.*
+pytest-asyncio==0.24.*
+ruff==0.8.*

@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+config/entity.yaml
+*.db
+.DS_Store
+
+# Claude Code: machine-specific config and credentials.
+# .claude/skills/ is project-shared and IS committed.
+.claude/settings.local.json
+.claude/.credentials.json

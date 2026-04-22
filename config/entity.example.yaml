@@ -1,0 +1,19 @@
+perception:
+  chain:
+    rpc_url: "${BASE_RPC_URL}"
+    poll_interval_s: 2.0
+    max_blocks_per_poll: 20
+  mempool:
+    enabled: true
+    provider: "${MEMPOOL_PROVIDER}"
+    api_key: "${MEMPOOL_API_KEY}"
+    watched_addresses: []
+  intel_feeds:
+    rekt_news: true
+    cve: true
+    forta: true
+    goplus: true
+    phalcon: false
+  aggregator:
+    high_threshold_sources: 2
+    dedupe_window_s: 1800
